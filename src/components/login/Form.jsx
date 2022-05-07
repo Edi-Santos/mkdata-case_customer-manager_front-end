@@ -4,6 +4,8 @@ import InputName from './InputName';
 import InputPassword from './InputPassword';
 import ButtonLogin from './ButtonLogin';
 
+import './form.css';
+
 function Form() {
   const [loginDatas, setLoginDatas] = useState({
     name: 'Admin',
