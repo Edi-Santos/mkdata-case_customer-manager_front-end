@@ -23,6 +23,7 @@ function Form() {
 
   return (
     <form>
+      <h2>Login</h2>
       <InputName name={ name } onChange={ handleChange } />
       <InputPassword password={ password } onChange={ handleChange } />
     </form>
