@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import InputName from './InputName';
 import InputPassword from './InputPassword';
+import ButtonLogin from './ButtonLogin';
 
 function Form() {
   const [loginDatas, setLoginDatas] = useState({
@@ -26,6 +27,7 @@ function Form() {
       <h2>Login</h2>
       <InputName name={ name } onChange={ handleChange } />
       <InputPassword password={ password } onChange={ handleChange } />
+      <ButtonLogin />
     </form>
   );
 }
