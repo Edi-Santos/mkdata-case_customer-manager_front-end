@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 import Login from './pages/login/Login';
 
@@ -9,6 +9,10 @@ function App() {
   return (
     <Routes>
       <Route path="/login" element={ <Login /> } />
+      <Route
+        path="/"
+        element={ <Navigate replace to="/login" /> }
+      />
     </Routes>
   );
 }
