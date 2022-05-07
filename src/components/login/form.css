@@ -1,0 +1,52 @@
+:root {
+
+  --title-color: rgba(0, 0, 0, 0.6);
+
+  --enter-bt-color: rgba(0, 128, 0, 0.7);
+
+  --hover-enter-bt-bg: rgba(0, 128, 0, 0.7);
+
+  --hover-enter-bt-color: white;
+}
+
+h2 {
+  color: var(--title-color);
+  margin-bottom: 3vh;
+}
+
+label {
+  font-size: 22px;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0 black;
+  font-size: 20px;
+  margin: 1vh 1vw;
+  padding: 0.7vh 0.5vw;
+}
+
+.login-bt {
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px black;
+  color: var(--enter-bt-color);
+  font-size: x-large;
+  margin-top: 5vh;
+  padding: 1vh 1vw;
+  text-decoration: none;
+}
+
+.login-bt:hover {
+  background-color: var(--hover-enter-bt-bg);
+  color: var(--hover-enter-bt-color);
+  transition: 0.7s;
+}
+
+@media only screen and ( max-width : 1000px ) {
+
+  .login-bt {
+    font-size: larger;
+    padding: 1.5vh 2vw;
+  }
+}
