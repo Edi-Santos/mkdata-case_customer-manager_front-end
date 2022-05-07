@@ -1,11 +1,20 @@
+:root {
+
+  --login-bg: whitesmoke;
+
+  --form-bg: white;
+}
+
 body {
   align-items: center;
+  background-color: var(--login-bg);
   display: flex;
   justify-content: center;
 }
 
 form {
   align-items: center;
+  background-color: var(--form-bg);
   border: 1px solid black;
   border-radius: 20px;
   box-shadow: 3px 3px 5px gray;
