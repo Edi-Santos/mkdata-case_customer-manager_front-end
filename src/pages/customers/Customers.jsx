@@ -14,10 +14,8 @@ function Customers() {
 
   return (
     <div>
-      {
-        isLoading ? <Loading />
-          : <h1>meu pastel é mais barato</h1>
-      }
+      { isLoading && <Loading /> }
+      { !isLoading && <h1>meu pastel é mais barato</h1> }
     </div>
   );
 }
