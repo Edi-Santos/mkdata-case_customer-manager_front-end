@@ -1,0 +1,21 @@
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  animation-duration: 3s;
+  animation-name: appearing;
+}
+
+@keyframes appearing {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
