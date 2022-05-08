@@ -4,7 +4,7 @@ main {
   flex-direction: column;
 }
 
-img {
+img, h1 {
   animation-duration: 3s;
   animation-name: appearing;
 }
