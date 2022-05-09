@@ -1,0 +1,30 @@
+:root {
+
+  --table-tr-hover: rgb(221, 221, 221);
+
+  --table-th-bg: rgb(4, 170, 109);
+
+  --table-border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr:hover {
+  background-color: var(--table-tr-hover);
+}
+
+th {
+  background-color: var(--table-th-bg);
+  border: var(--table-border);
+  color: white;
+  padding: 3vh 5vw;
+}
+
+td {
+  border-bottom: var(--table-border);
+  padding: 2vh 0;
+  text-align: center;
+}
