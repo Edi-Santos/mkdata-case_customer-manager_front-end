@@ -10,7 +10,6 @@ function Tbody() {
       <td>{ customer.nome }</td>
       <td>{ customer.grupo }</td>
       <td>{ customer.ativo ? 'ativo' : 'inativo' }</td>
-      <td>X</td>
     </tr>
   ));
 }

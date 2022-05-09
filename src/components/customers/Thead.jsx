@@ -6,7 +6,6 @@ function Thead() {
       <th>Nome</th>
       <th>Grupo</th>
       <th>Ativo</th>
-      <th>Deletar</th>
     </tr>
   );
 }
