@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+
+import Table from '../../components/customers/Table';
 import Loading from '../loading/Loading';
 
 function Customers() {
@@ -15,7 +17,7 @@ function Customers() {
   return (
     <div>
       { isLoading && <Loading /> }
-      { !isLoading && <h1>meu pastel é mais barato</h1> }
+      { !isLoading && <Table /> }
     </div>
   );
 }
