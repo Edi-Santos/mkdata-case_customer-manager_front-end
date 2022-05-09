@@ -4,6 +4,10 @@ main {
   flex-direction: column;
 }
 
+img {
+  width: 80%;
+}
+
 img, h1 {
   animation-duration: 3s;
   animation-name: appearing;
@@ -19,3 +23,10 @@ img, h1 {
     opacity: 1;
   }
 }
+
+/* @media only screen and ( max-width : 390px ) {
+
+  img {
+
+  }
+} */
