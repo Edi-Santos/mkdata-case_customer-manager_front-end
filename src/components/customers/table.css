@@ -14,6 +14,7 @@ table {
 
 tr:hover {
   background-color: var(--table-tr-hover);
+  cursor: pointer;
 }
 
 th {
