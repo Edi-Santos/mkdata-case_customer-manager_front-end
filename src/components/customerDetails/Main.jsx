@@ -3,6 +3,7 @@ import React from 'react';
 import Details from './Details';
 import BackToCustomers from './BackToCustomers';
 import UpdateCustomer from './UpdateCustomer';
+import DeleteCustomer from './DeleteCustomer';
 
 function Main() {
   return (
@@ -10,6 +11,7 @@ function Main() {
       <Details />
       <div>
         <UpdateCustomer />
+        <DeleteCustomer />
       </div>
       <BackToCustomers />
     </main>
