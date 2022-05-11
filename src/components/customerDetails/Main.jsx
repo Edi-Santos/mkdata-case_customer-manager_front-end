@@ -5,9 +5,11 @@ import BackToCustomers from './BackToCustomers';
 import UpdateCustomer from './UpdateCustomer';
 import DeleteCustomer from './DeleteCustomer';
 
+import './main.css';
+
 function Main() {
   return (
-    <main>
+    <main className="main-details">
       <Details />
       <div>
         <UpdateCustomer />
