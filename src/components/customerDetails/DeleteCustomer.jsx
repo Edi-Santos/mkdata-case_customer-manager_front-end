@@ -1,17 +1,10 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
-
-import MyContext from '../../contextAPI/MyContext';
 
 import request from '../../services/fetchToAPI';
 
 function DeleteCustomer() {
-  const { allCustomers: { customers } } = useContext(MyContext);
   const { id } = useParams();
-
-  const customer = customers && customers.find((cust) => cust.id === parseInt(id, 10));
-
-  const changingStatus = customer.ativo || false;
 
   const handleClick = async () => {
     const localURL = `http://localhost:3001/customer/delete/${id}`;
@@ -21,12 +14,10 @@ function DeleteCustomer() {
       'Content-type': 'application/json',
     };
     const body = {
-      ativo: changingStatus,
+      ativo: false,
     };
 
-    const requesting = await request(localURL, method, headers, JSON.stringify(body));
-
-    console.log(requesting);
+    await request(localURL, method, headers, JSON.stringify(body));
     window.location.reload(true);
   };
 
