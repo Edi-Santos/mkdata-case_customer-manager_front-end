@@ -7,8 +7,20 @@
   --table-border: 1px solid rgba(0, 0, 0, 0.4);
 }
 
+section {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 80%;
+}
+
+section img {
+  max-width: 20%;
+}
+
 table {
   border-collapse: collapse;
+  margin: 0 15px;
   width: 100%;
 }
 
@@ -28,4 +40,22 @@ td {
   border-bottom: var(--table-border);
   padding: 2vh 0;
   text-align: center;
+}
+
+@media only screen and ( max-width : 800px ) {
+
+  section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section img {
+    max-width: 30%;
+  }
+
+  table {
+    margin: 0 0 50px;
+  }
 }
