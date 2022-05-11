@@ -1,0 +1,19 @@
+:root {
+
+  --main-box-shadow: rgba(0, 0, 0, 0.4);
+}
+
+.main-details {
+  border-radius: 20px;
+  box-shadow: 1px 1px 0 var(--main-box-shadow);
+  margin: auto;
+  max-width: 90%;
+  padding: 20px;
+}
+
+.main-details p {
+  border-radius: 5px;
+  box-shadow: 1px 1px 0 var(--main-box-shadow);
+  font-weight: 700;
+  padding: 5px;
+}
