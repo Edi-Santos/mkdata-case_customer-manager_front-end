@@ -39,15 +39,15 @@ function Form() {
   console.log(customer);
 
   const handleClick = async () => {
-    const localURL = `http://localhost:3001/customer/${id}`;
-    // const cloudURL = `https://mkdata-case-2822.herokuapp.com/customer/${id}`;
+    // const localURL = `http://localhost:3001/customer/${id}`;
+    const cloudURL = `https://mkdata-case-2822.herokuapp.com/customer/${id}`;
     const method = 'PUT';
     const headers = {
       'Content-type': 'application/json',
     };
     const body = { ...inputs };
 
-    await request(localURL, method, headers, JSON.stringify(body));
+    await request(cloudURL, method, headers, JSON.stringify(body));
   };
 
   const handleChange = ({ target }) => {

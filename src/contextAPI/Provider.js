@@ -10,14 +10,14 @@ function Provider({ children }) {
 
   useEffect(() => {
     const getingCustomers = async () => {
-      const localUrl = 'http://localhost:3001/customer';
-      // const CloudUrl = 'https://mkdata-case-2822.herokuapp.com/customer';
+      // const localUrl = 'http://localhost:3001/customer';
+      const cloudURL = 'https://mkdata-case-2822.herokuapp.com/customer';
       const method = 'GET';
       const headers = {
         'Content-type': 'application/json; charset=UTF8',
       };
 
-      const { customers } = await request(localUrl, method, headers);
+      const { customers } = await request(cloudURL, method, headers);
 
       setAllCustomers((prevState) => ({
         ...prevState,

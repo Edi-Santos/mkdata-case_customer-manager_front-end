@@ -7,8 +7,8 @@ function DeleteCustomer() {
   const { id } = useParams();
 
   const handleClick = async () => {
-    const localURL = `http://localhost:3001/customer/delete/${id}`;
-    // const cloudURL = `https://mkdata-case-2822.herokuapp.com/customer/delete/${id}`;
+    // const localURL = `http://localhost:3001/customer/delete/${id}`;
+    const cloudURL = `https://mkdata-case-2822.herokuapp.com/customer/delete/${id}`;
     const method = 'PUT';
     const headers = {
       'Content-type': 'application/json',
@@ -17,7 +17,7 @@ function DeleteCustomer() {
       ativo: false,
     };
 
-    await request(localURL, method, headers, JSON.stringify(body));
+    await request(cloudURL, method, headers, JSON.stringify(body));
     window.location.reload(true);
   };
 
