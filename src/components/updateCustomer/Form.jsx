@@ -34,7 +34,9 @@ function Form() {
       RG,
       grupo,
     });
-  }, []);
+  }, [customer]);
+
+  console.log(customer);
 
   const handleClick = async () => {
     const localURL = `http://localhost:3001/customer/${id}`;
